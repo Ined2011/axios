@@ -1,16 +1,92 @@
-# React + Vite
+# Sistema de Consulta Estudiantil Modularizado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Este proyecto fue desarrollado en React + Vite utilizando Axios para consumir la API pública de Rick and Morty.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+La aplicación permite consultar personajes según su especie utilizando un selector dinámico. Al cambiar la opción del select, se realiza una petición a la API y se muestran tarjetas con la información de los personajes.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+* React
+* Vite
+* Axios
+* JavaScript
+* CSS
+* Git y GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Funcionalidades
+
+* Consumo de API pública Rick and Morty
+* Uso de Axios con instancia personalizada
+* Modularización del proyecto
+* Servicios para manejo de peticiones
+* Selector dinámico de especies
+* Renderizado de tarjetas de personajes
+* Uso de hooks (`useState` y `useEffect`)
+
+---
+
+## Estructura del proyecto
+
+```plaintext
+src
+│
+├── api
+│   └── axios.js
+│
+├── services
+│   └── personajesService.js
+│
+├── components
+│   └── Personajes.jsx
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## Instalación del proyecto
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/Ined2011/axios.git
+```
+
+Ingresar al proyecto:
+
+```bash
+cd axios
+```
+
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Ejecutar el proyecto:
+
+```bash
+npm run dev
+```
+
+---
+
+## API utilizada
+
+Rick and Morty API:
+
+https://rickandmortyapi.com/api
+
+---
+
+## Autor
+
+Proyecto realizado por aprendiz Mayerlin Cubides en formación de técnica laboral en desarrollo de software.
